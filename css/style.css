@@ -1,0 +1,255 @@
+body,html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    background-color:#323232;
+    color:#fff;
+}
+
+
+a,a:active,a:hover{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:#000;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+}
+
+#menu .logo-block{}
+#menu .logo-block a img{
+    width: 100px;
+}
+#menu .items{}
+#menu .items ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+}
+#menu .items ul li{
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: 300ms;
+}
+#menu .items ul li:hover a{
+    color: #000 !important;
+}
+#menu .items ul li:hover{
+    background-color: #fff;
+    color: #000;
+    transition:300ms;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%
+    z-index: 1;
+    background-color: rgb(0,0,0,0.3);
+}
+#header{ /* замените .container на класс или ID нужного блока */
+    width: 100%;
+    height: 100vh; /* или высота, соответствующая нужной области */
+    background-image: url('/img/background.jpg');
+    background-size: cover; /* или background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header > *{z-index: 2;}
+
+#header .blok .profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+}
+
+#header .icons{
+     position: absolute;
+     width: 100%;
+     height: 100px;
+     text-align: center;
+     bottom: 2%;
+     left 0;
+     font-size: 3em;
+}
+
+#header .blok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Стили для слайдера */
+.slider {
+  position: relative;
+  width: 700px; /* ширина слайдера */
+  height: 500px; /* высота слайдера */
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.prev, .next {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+}
+
+.progress {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #666;
+  transition: width 0.5s;
+}
+
+#about{
+    padding: 4em 1em;
+}
+
+#about h2{
+    font-size: 60px;
+}
+
+#skills{
+    padding: 4em 1em;
+}
+#skills .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#skills .items .item {
+    width: 50%;
+    padding: 0px 10px;
+    position: relative;
+}
+
+#skills .items .item:nth-child(2n+1) {
+}
+
+#skills .items .item:nth-child(2n) {
+    margin-left: 50%;
+    text-align: right;
+}
+
+#skills .items .item:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-left: 1px solid #fff;
+    height: 100%;
+}
+
+#skills .items .item:nth-child(2n+1)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#skills .items .item:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-left: 1px solid #fff;
+    height: 100%;
+}
+
+#skills .items .item:nth-child(2n)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+#contacts{}
+#contacts > div{
+    padding: 15px;
+}
