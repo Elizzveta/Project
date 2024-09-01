@@ -1,5 +1,9 @@
 body,html{
     overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 body{
@@ -27,12 +31,12 @@ a,a:active,a:hover{
     top: 0;
     z-index: 1200;
 }
-
 #menu .logo-block{}
 #menu .logo-block a img{
     width: 100px;
 }
 #menu .items{}
+
 #menu .items ul{
     display: flex;
     flex-direction: row;
@@ -59,20 +63,26 @@ a,a:active,a:hover{
     transition:300ms;
 }
 
-#header{
-    position: relative;
+/* #header{ */
+    /* position: relative;
     width: 100%;
     height:100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url(background.jpg);
-    background-position: center;
+    /* align-items: center; */
+    /* background-image: url("img/background.jpg");  */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+/* } */
+#header .block{
+    width: 1500px;
+    height: 700px;
+    z-index: 500;
+    background-image: url(/img/background.jpg);
+    border: solid #fff;
 }
-
-#header:after{
+/* #header:after{
     content: "";
     position: absolute;
     top: 0;
@@ -80,19 +90,9 @@ a,a:active,a:hover{
     height: 100%
     z-index: 1;
     background-color: rgb(0,0,0,0.3);
-}
-#header{ /* замените .container на класс или ID нужного блока */
-    width: 100%;
-    height: 100vh; /* или высота, соответствующая нужной области */
-    background-image: url('/img/background.jpg');
-    background-size: cover; /* или background-size: 100% 100%; */
-    background-repeat: no-repeat;
-    background-position: center;
-}
+} */
 
-#header > *{z-index: 2;}
-
-#header .blok .profile{
+/* #header .block .profile{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -101,24 +101,24 @@ a,a:active,a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-image: cover;
-}
+} */
 
-#header .icons{
+/* #header .icons{
      position: absolute;
      width: 100%;
      height: 100px;
      text-align: center;
      bottom: 2%;
-     left 0;
+     left: 0;
      font-size: 3em;
-}
+} */
 
-#header .blok{
+/* #header .block{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 /* Стили для слайдера */
@@ -201,10 +201,6 @@ a,a:active,a:hover{
     padding: 0px 10px;
     position: relative;
 }
-
-#skills .items .item:nth-child(2n+1) {
-}
-
 #skills .items .item:nth-child(2n) {
     margin-left: 50%;
     text-align: right;
@@ -249,7 +245,15 @@ a,a:active,a:hover{
     border-radius: 50%;
     background: #fff;
 }
-#contacts{}
+
 #contacts > div{
     padding: 15px;
+}
+#contacts{
+    width: 950px;
+    text-align: center;
+}
+#contacts .icon i{
+    font-size: 30px;
+    margin: 5px 10px;
 }
