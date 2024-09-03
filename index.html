@@ -10,73 +10,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Шрифт--> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
-<style>
-	/*Адаптация*/
-	@media (max-width: 768px) {
-		#menu .item{
-			display: block;
-		}
-
-		.slider {
-			position: relative;
-			width: 100%;
-			height: 300px;
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.slide {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			}
-
-		.nav {
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		.prev, .next {
-			font-size: 24px;
-			color: #fff;
-			background-color: #333;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 50%;
-			cursor: pointer;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.prev:hover, .next:hover {
-			background-color: #444;
-		}
-
-		.progress-bar {
-			width: 100%;
-			height: 5px;
-			background-color: #333;
-			border-radius: 10px;
-			position: absolute;
-			bottom: 0;  
-			left: 0;
-		}
-		#about, #contacts {
-			padding: 20px;
-		}
-		#about h2, #contacts h2 {
-			font-size: 24px;
-		}
-	}
-</style>
 </head>
 <body>
 	<!-- Меню -->
@@ -100,6 +33,7 @@
 
 	<header id="header">
 		<div class="block">
+			<img src="img/background.jpg">
       		<h1>Make Coffee</h1>
 		</div>
 	</header>
@@ -110,13 +44,12 @@
 	<section id="about" class="container">
 		<h2>О нас</h2>
 		<div class="row">
-			<div class="col-md-6">
-				<img src="-" width="100%">
+			<div class="content"><p>Компания Makecoffee была создана в 2015 году в Подмосковном городе Кубинка.
+				Началось всё с небольшой кофейни, а позже переросло в большую любовь к кофе.
+				Сейчас Makecoffee - это сеть успешных кофеен по Московской области, которая продолжает открывать свои двери в других городах.
+				Мы рады видеть каждого из вас, чтобы поделиться дружелюбной атмосферой, а, главное, вкусным кофе!</p>
+				<img src="img/1.jpg" width="100%">
 			</div>
-			<div class="col-md-6"><p>Компания Makecoffee была создана в 2015 году в Подмосковном городе Кубинка.
-Началось всё с небольшой кофейни, а позже переросло в большую любовь к кофе.
-Сейчас Makecoffee - это сеть успешных кофеен по Московской области, которая продолжает открывать свои двери в других городах.
-Мы рады видеть каждого из вас, чтобы поделиться дружелюбной атмосферой, а, главное, вкусным кофе!</p></div>
 		</div>
 	</section>
 
@@ -124,16 +57,16 @@
    <!-- Слайдер -->
  <div class="slider">
       <div class="slide">
-        <img src="img/menu/menu1.jpg" alt="Slide 1">
+        <img src="img/menu1.jpg" alt="Slide 1">
       </div>
       <div class="slide">
-        <img src="img/menu/menu2.jpg" alt="Slide 2">
+        <img src="img/menu2.jpg" alt="Slide 2">
       </div>
       <div class="slide">
-        <img src="img/menu/menu3.jpg" alt="Slide 3">
+        <img src="img/menu3.jpg" alt="Slide 3">
       </div>
        <div class="slide">
-        <img src="img/menu/menu4.jpg" alt="Slide 4">
+        <img src="img/menu4.jpg" alt="Slide 4">
       </div>
       <div class="nav">
         <button class="prev">←</button>
