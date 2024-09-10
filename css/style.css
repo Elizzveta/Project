@@ -232,3 +232,9 @@ a,a:active,a:hover{
     font-size: 30px;
     margin: 5px 10px;
 }
+.content{ /* Скрываем сразу контент */
+    display: none;
+  }
+  .wrapper a:hover ~ .content{ /* При наведении на ссылку в раппере, откроется контент */
+    display: block;
+  }
