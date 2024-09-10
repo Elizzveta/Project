@@ -1,5 +1,4 @@
-
-const slider = document.querySelector('.slider');
+  const slider = document.querySelector('.slider');
   const slides = document.querySelectorAll('.slide');
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
