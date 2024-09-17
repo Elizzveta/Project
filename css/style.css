@@ -47,7 +47,7 @@ a,a:active,a:hover{
     margin-right: 10px;
     padding: 10px;
     background-color: #000;
-    color: #fff;
+    color: #ffffff;
     transition: 300ms;
 }
 #menu .items ul li:hover a{
@@ -73,11 +73,11 @@ a,a:active,a:hover{
 #header h1{
     z-index: 5;
     position: absolute;
-    color: #fff;
+    color: #99f15b;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border:1px solid #fff;
+    border:3px solid #99f15b;
     padding: 1rem;
     text-align: center;
 }
